@@ -1,0 +1,25 @@
+# Zenple App Context for AI
+
+## Overview
+Zenple: Focus & Be productive. Zenple is a focus timer application designed to help users lock their phones, beat distractions, and significantly boost their everyday productivity.
+
+## Core Philosophy
+- Focus & Be productive.
+- Lock your phone, beat distractions.
+- Provide a structured way to handle deep work and boost productivity without losing momentum.
+
+## Key Features
+- **Focus Timers:** Start, pause, resume easily. Defaults: 25/50/90 minutes, plus custom times to lock in focus.
+- **Category Insights:** Users tag sessions (e.g., Learning, Fitness) to track long-term productivity trends privately.
+- **Tokens & Slogans:** Gamification through small rewards (tokens) and motivational rotating slogans to maintain momentum.
+- **Multi-language:** Supports English, Traditional Chinese (繁體中文), Simplified Chinese (简体中文).
+- **Beat Distractions:** Subtle, fully customizable chimes designed to keep focus sharp.
+- **Privacy-first:** Data is kept minimal and private by design.
+
+## Target Audience
+Students, engineers, and anyone looking to beat distractions, lock their phone, and instantly boost their productivity.
+
+## Metadata & Links
+- **Platform:** Android (Google Play Store)
+- **App ID:** com.zenplelife.zenple
+- **Download Link:** https://play.google.com/store/apps/details?id=com.zenplelife.zenple

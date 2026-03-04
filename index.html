@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zenple — Focus, Flow, Enjoy Life</title>
+    <title>Zenple: Focus & Be productive</title>
+
+    <!-- SEO & GEO Tags -->
+    <meta name="description"
+        content="Lock your phone, beat distractions, and boost productivity with a focus timer. Zenple turns your day into satisfying, productive sessions." />
+    <meta name="keywords"
+        content="focus timer, productivity app, beat distractions, lock phone, time tracking, study timer, deep work timer" />
+    <link rel="canonical" href="https://zenplelife.com/" />
+
+    <!-- Open Graph for AI bots with browsing tools & Socials -->
+    <meta property="og:title" content="Zenple: Focus & Be productive" />
+    <meta property="og:description"
+        content="Lock your phone, beat distractions, and boost productivity with a focus timer. Track time by categories and unlock tiny rewards." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenplelife.com/" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_1.0.jpg" />
 
     <style>
         :root {
@@ -15,54 +32,65 @@
             --brand-2: #ffdd54;
             --coral: #f4a89a;
             --radius: 24px;
-            --shadow: 0 8px 24px rgba(0,0,0,.08);
+            --shadow: 0 8px 24px rgba(0, 0, 0, .08);
         }
-        
-        * { box-sizing: border-box; }
-        html, body { height: 100%; }
-        body { 
-            margin: 0; 
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #faf8f5 0%, #f3ede5 100%);
-            color: var(--text); 
+            color: var(--text);
             line-height: 1.6;
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        header { 
-            position: sticky; 
-            top: 0; 
-            backdrop-filter: blur(10px); 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
             background: rgba(250, 248, 245, 0.85);
-            border-bottom: 1px solid rgba(0,0,0,.04);
+            border-bottom: 1px solid rgba(0, 0, 0, .04);
             z-index: 10;
         }
-        
-        .nav { 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 16px 0;
         }
-        
-        .brand { 
-            display: inline-flex; 
-            gap: 10px; 
-            align-items: center; 
-            text-decoration: none; 
-            color: var(--text); 
+
+        .brand {
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text);
             font-weight: 800;
             font-size: 18px;
             letter-spacing: -0.5px;
         }
-        
-        .brand .logo { 
-            width: 40px; 
-            height: 40px; 
-            border-radius: 14px; 
+
+        .brand .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 14px;
             background: linear-gradient(135deg, var(--brand), #5ecec4);
-            display: grid; 
+            display: grid;
             place-items: center;
             box-shadow: 0 6px 16px rgba(78, 191, 184, 0.3);
             color: white;
@@ -70,38 +98,41 @@
             font-size: 20px;
         }
 
-        nav a { 
-            color: var(--muted); 
-            text-decoration: none; 
-            margin-left: 32px; 
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 32px;
             font-weight: 600;
             transition: color 0.2s;
         }
-        nav a:hover { color: var(--text); }
 
-        .btn { 
-            display: inline-flex; 
-            align-items: center; 
-            gap: 8px; 
-            padding: 12px 24px; 
-            border-radius: 999px; 
+        nav a:hover {
+            color: var(--text);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 999px;
             border: none;
             background: white;
-            color: var(--text); 
-            text-decoration: none; 
+            color: var(--text);
+            text-decoration: none;
             cursor: pointer;
             font-weight: 600;
             font-size: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
             transition: all 0.2s ease;
         }
-        
-        .btn:hover { 
+
+        .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,.12);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
         }
-        
-        .btn.primary { 
+
+        .btn.primary {
             background: linear-gradient(135deg, var(--brand), #5ecec4);
             color: white;
             box-shadow: 0 8px 24px rgba(78, 191, 184, 0.3);
@@ -114,12 +145,12 @@
             padding: 80px 40px 60px;
             background: linear-gradient(180deg, rgba(255, 221, 84, 0.06) 0%, rgba(244, 168, 154, 0.04) 100%);
         }
-        
-        .hero > div {
+
+        .hero>div {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .hero h1 {
             font-size: clamp(40px, 6vw, 72px);
             line-height: 1.1;
@@ -127,7 +158,7 @@
             letter-spacing: -1px;
             color: var(--text);
         }
-        
+
         .hero p {
             margin: 0 0 32px;
             font-size: clamp(16px, 2vw, 18px);
@@ -148,7 +179,7 @@
             flex-wrap: wrap;
             margin-top: 24px;
         }
-        
+
         .stat {
             padding: 12px 20px;
             border-radius: 12px;
@@ -156,137 +187,137 @@
             border: 1px solid rgba(0, 0, 0, 0.04);
             font-weight: 600;
             font-size: 14px;
-            box-shadow: 0 2px 8px rgba(0,0,0,.04);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
         }
 
-        .section { 
+        .section {
             padding: 100px 0;
         }
-        
-        .kicker { 
-            color: var(--brand); 
-            font-weight: 800; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
+
+        .kicker {
+            color: var(--brand);
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             font-size: 12px;
         }
-        
-        .h2 { 
-            font-size: clamp(32px, 4vw, 48px); 
+
+        .h2 {
+            font-size: clamp(32px, 4vw, 48px);
             margin: 12px 0 16px;
             line-height: 1.2;
         }
-        
-        .sub { 
-            color: var(--muted); 
+
+        .sub {
+            color: var(--muted);
             max-width: 700px;
             font-size: 16px;
         }
 
-        .feature-grid { 
-            display: grid; 
+        .feature-grid {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px; 
-            margin-top: 48px; 
+            gap: 20px;
+            margin-top: 48px;
         }
-        
-        .card { 
-            padding: 32px 28px; 
-            border-radius: var(--radius); 
+
+        .card {
+            padding: 32px 28px;
+            border-radius: var(--radius);
             background: var(--card);
-            border: 1px solid rgba(0,0,0,.04);
+            border: 1px solid rgba(0, 0, 0, .04);
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
         }
-        
+
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 16px 40px rgba(0,0,0,.12);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, .12);
         }
-        
-        .card h3 { 
-            margin: 16px 0 10px; 
+
+        .card h3 {
+            margin: 16px 0 10px;
             font-size: 18px;
         }
-        
-        .card p { 
-            color: var(--muted); 
+
+        .card p {
+            color: var(--muted);
             margin: 0;
             font-size: 14px;
         }
-        
-        .icon { 
-            width: 50px; 
-            height: 50px; 
-            border-radius: 14px; 
-            display: grid; 
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: grid;
             place-items: center;
             background: linear-gradient(135deg, var(--brand), #5ecec4);
             box-shadow: 0 8px 20px rgba(78, 191, 184, 0.25);
             font-size: 24px;
         }
 
-        .gallery { 
-            display: grid; 
+        .gallery {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px; 
-            margin-top: 40px; 
+            gap: 16px;
+            margin-top: 40px;
         }
-        
-        .shot { 
-            border-radius: 20px; 
-            overflow: hidden; 
-            border: 1px solid rgba(0,0,0,.06);
-            aspect-ratio: 9/16; 
+
+        .shot {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, .06);
+            aspect-ratio: 9/16;
             background: var(--card);
-            box-shadow: 0 12px 32px rgba(0,0,0,.12);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
         }
-        
-        .shot img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
+
+        .shot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
-        .quotes { 
-            display: grid; 
+        .quotes {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px; 
-            margin-top: 36px; 
+            gap: 24px;
+            margin-top: 36px;
         }
-        
-        .quote { 
-            padding: 28px; 
-            border-radius: var(--radius); 
+
+        .quote {
+            padding: 28px;
+            border-radius: var(--radius);
             background: var(--card);
-            border: 1px solid rgba(0,0,0,.04);
+            border: 1px solid rgba(0, 0, 0, .04);
             box-shadow: var(--shadow);
         }
-        
-        .quote p { 
+
+        .quote p {
             margin: 0;
             font-size: 16px;
             line-height: 1.7;
             font-style: italic;
             color: var(--text);
         }
-        
-        .quote .who { 
-            margin-top: 14px; 
-            color: var(--muted); 
+
+        .quote .who {
+            margin-top: 14px;
+            color: var(--muted);
             font-weight: 600;
             font-size: 14px;
         }
 
-        .cta { 
-            padding: 48px 40px; 
-            border-radius: 28px; 
+        .cta {
+            padding: 48px 40px;
+            border-radius: 28px;
             background: linear-gradient(135deg, var(--brand), #5ecec4);
             box-shadow: 0 16px 48px rgba(78, 191, 184, 0.25);
-            display: grid; 
-            grid-template-columns: 1fr auto; 
-            align-items: center; 
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
             gap: 32px;
         }
 
@@ -302,25 +333,47 @@
             font-size: 16px;
         }
 
-        footer { 
-            padding: 48px 0 60px; 
+        footer {
+            padding: 48px 0 60px;
             color: var(--muted);
-            border-top: 1px solid rgba(0,0,0,.04);
+            border-top: 1px solid rgba(0, 0, 0, .04);
         }
-        
-        footer a { 
-            color: var(--text); 
+
+        footer a {
+            color: var(--text);
             text-decoration: none;
         }
 
         @media (max-width: 768px) {
-            nav { display: none; }
-            .hero { padding: 60px 20px 40px; }
-            .hero-buttons { flex-direction: column; }
-            .btn { width: 100%; justify-content: center; }
-            .stat-row { flex-direction: column; }
-            .cta { grid-template-columns: 1fr; text-align: center; }
-            .section { padding: 60px 0; }
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 60px 20px 40px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stat-row {
+                flex-direction: column;
+            }
+
+            .cta {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
         }
     </style>
 </head>
@@ -336,7 +389,8 @@
                 <a href="#features">Features</a>
                 <a href="#screens">Screens</a>
                 <a href="#reviews">Reviews</a>
-                <a href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple" target="_blank">Download</a>
+                <a href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple"
+                    target="_blank">Download</a>
             </nav>
         </div>
     </header>
@@ -344,25 +398,28 @@
     <main id="top" class="container">
         <section class="hero">
             <div>
-                <div class="kicker">Focus • Flow • Enjoy</div>
-                <h1>Small rituals, big calm.</h1>
-                <p>Zenple is a gentle focus timer that turns your day into satisfying sessions. Track time by categories, unlock tiny rewards, and watch your habits bloom—without the pressure.</p>
+                <div class="kicker">Focus & Be productive</div>
+                <h1>Beat distractions and boost productivity.</h1>
+                <p>Lock your phone, beat distractions, and boost productivity with a focus timer. Track time by
+                    categories, collect rewards, and build powerful habits that keep you in the zone.</p>
                 <div class="hero-buttons">
-                    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple" target="_blank">Download on Google Play</a>
+                    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple"
+                        target="_blank">Download on Google Play</a>
                     <a class="btn" href="#screens">Preview screenshots</a>
                 </div>
                 <div class="stat-row">
-                    <div class="stat">✨ 1k+ sessions logged</div>
+                    <div class="stat">✨ Boost focus</div>
                     <div class="stat">🛡️ Private by design</div>
-                    <div class="stat">🌙 Calming UI</div>
+                    <div class="stat">🌙 Track productivity</div>
                 </div>
             </div>
         </section>
 
         <section id="features" class="section container">
             <p class="kicker">Why Zenple</p>
-            <h2 class="h2">Everything you need to get in the zone</h2>
-            <p class="sub">Designed for humans who like a bit of peace with their productivity. Zenple pairs a flexible timer with soothing visuals, category insights, and light‑touch motivation.</p>
+            <h2 class="h2">Everything you need to beat distractions</h2>
+            <p class="sub">Designed to help you lock your phone and regain your focus. Zenple pairs a powerful timer
+                with effective tracking so you can boost your productivity.</p>
 
             <div class="feature-grid">
                 <article class="card">
@@ -403,22 +460,27 @@
             <h2 class="h2">A calm, modern interface</h2>
 
             <div class="gallery">
-                <figure class="shot"><img alt="Timer screen" src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_1.0.jpg" /></figure>
-                <figure class="shot"><img alt="Categories screen" src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_2.0.jpg" /></figure>
-                <figure class="shot"><img alt="Stats screen" src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_3.0.jpg" /></figure>
+                <figure class="shot"><img alt="Timer screen"
+                        src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_1.0.jpg" /></figure>
+                <figure class="shot"><img alt="Categories screen"
+                        src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_2.0.jpg" /></figure>
+                <figure class="shot"><img alt="Stats screen"
+                        src="https://raw.githubusercontent.com/ZenpleLife/ZenpleLife/main/Images/GS_3.0.jpg" /></figure>
             </div>
         </section>
 
         <section id="reviews" class="section container">
             <p class="kicker">What users say</p>
-            <h2 class="h2">Built for quiet focus</h2>
+            <h2 class="h2">Built to boost productivity</h2>
             <div class="quotes">
                 <blockquote class="quote">
-                    <p>"I didn't think a timer could make me smile. Zenple's tiny animations and gentle stats keep me coming back."</p>
+                    <p>"I never realized how much my phone distracted me. Zenple helps me lock it away and actually get
+                        work done."</p>
                     <div class="who">— Mia, student</div>
                 </blockquote>
                 <blockquote class="quote">
-                    <p>"The vibe is perfect: calm, modern, no pressure. My best sessions happen with Zenple."</p>
+                    <p>"The best way to stay in the zone. Clean, effective, and it genuinely boosted my daily focus."
+                    </p>
                     <div class="who">— Jordan, engineer</div>
                 </blockquote>
             </div>
@@ -430,7 +492,8 @@
                     <h3>Ready to try Zenple?</h3>
                     <p>Start your next focused session in seconds. It's free to begin.</p>
                 </div>
-                <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple" target="_blank">Get it on Google Play</a>
+                <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zenplelife.zenple"
+                    target="_blank">Get it on Google Play</a>
             </div>
         </section>
 
@@ -443,7 +506,7 @@
                 <span style="opacity:.6;">© <span id="year"></span> Zenple. All rights reserved.</span>
             </div>
             <div style="margin-top:12px; display:flex; gap:16px; flex-wrap:wrap;">
-                <a href="/" >Privacy Policy</a>
+                <a href="/">Privacy Policy</a>
                 <a href="mailto:simplejoyfuljourney@gmail.com">Contact</a>
             </div>
         </footer>
@@ -453,4 +516,5 @@
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
+
 </html>
